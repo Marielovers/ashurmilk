@@ -6,7 +6,7 @@ export const TAPS = Object.freeze({ LEFT: 'left', RIGHT: 'right', HEAD: 'head', 
 export const COMBO_RESET_MS = 850;
 
 export const clamp = (x, min, max) => Math.min(max, Math.max(min, x));
-export const nextLevelCost = level => clamp(Math.ceil(30 * 1.5 ** level), 0, 9_999_999);
+export const nextLevelCost = level => clamp(Math.ceil(30 * 2 ** level), 0, 9_999_999);
 export const remainingMs = (startedAt, now, duration = ROUND_MS) => Math.max(0, duration - (now - startedAt));
 export const formatCash = cash => Math.max(0, Math.floor(cash)).toLocaleString('ko-KR');
 

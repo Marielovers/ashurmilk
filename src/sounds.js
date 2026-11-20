@@ -1,9 +1,10 @@
+const SITE_BASE = typeof window === 'undefined' ? './' : import.meta.env.BASE_URL;
 const SOURCES = {
-  left: './sound/left.wav',
-  right: './sound/right.wav',
-  facehit: './sound/facehit.wav',
-  touch: './sound/touch.wav',
-  voice: './sound/Voice_Ashur_Touch2.wav',
+  left: `${SITE_BASE}sound/left.wav`,
+  right: `${SITE_BASE}sound/right.wav`,
+  facehit: `${SITE_BASE}sound/facehit.wav`,
+  touch: `${SITE_BASE}sound/touch.wav`,
+  voice: `${SITE_BASE}sound/Voice_Ashur_Touch2.wav`,
 };
 
 export class SoundEngine {

@@ -1,9 +1,10 @@
 // Replay the user's actual .motion3.json curve data at a click-friendly speed.
 // This avoids motion-manager reservations swallowing rapid successive inputs.
+const SITE_BASE = typeof window === 'undefined' ? './' : import.meta.env.BASE_URL;
 export const MOTION_FILES = Object.freeze({
-  left: './model/왼쪽.motion3.json',
-  right: './model/오른쪽.motion3.json',
-  head: './model/꿀밤.motion3.json',
+  left: `${SITE_BASE}model/왼쪽.motion3.json`,
+  right: `${SITE_BASE}model/오른쪽.motion3.json`,
+  head: `${SITE_BASE}model/꿀밤.motion3.json`,
 });
 
 const cubic = (a,b,c,d,t) => {

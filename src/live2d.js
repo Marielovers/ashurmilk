@@ -3,7 +3,8 @@ import { loadMotions, motionValue } from './motions.js';
 import { ParameterPort } from './parameter-port.js';
 import { resolveHitAreaIndices, hitFromGeometry, toRendererPosition, HIT_PRIORITY } from './hit-test.js';
 
-const CORE_LOCAL='./vendor/live2dcubismcore.min.js';
+const SITE_BASE = typeof window === 'undefined' ? './' : import.meta.env.BASE_URL;
+const CORE_LOCAL=`${SITE_BASE}vendor/live2dcubismcore.min.js`;
 const CORE_OFFICIAL='https://cubism.live2d.com/sdk-web/core/06/live2dcubismcore.min.js';
 
 function injectScript(url){return new Promise((resolve,reject)=>{
@@ -237,7 +238,7 @@ export async function initializeModel(canvas,stage,controller,onStatus) {
     resolution:Math.min(window.devicePixelRatio||1,2),autoDensity:true});
   Live2DModel.registerTicker(Ticker);
   onStatus('슈르 모델 로딩 중…');
-  const model=await Live2DModel.from('./model/슈르.model3.json',{autoInteract:false});
+  const model=await Live2DModel.from(`${SITE_BASE}model/슈르.model3.json`,{autoInteract:false});
   app.stage.addChild(model);
   model.anchor.set(.5,.5);
 

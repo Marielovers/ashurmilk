@@ -1,0 +1,64 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "슈르.moc3",
+    "Textures": [
+      "슈르.2048/texture_00.png"
+    ],
+    "Physics": "슈르.physics3.json",
+    "DisplayInfo": "슈르.cdi3.json",
+    "Motions": {
+      "TapLeft": [
+        {
+          "File": "왼쪽.motion3.json",
+          "FadeInTime": 0.06,
+          "FadeOutTime": 0.1
+        }
+      ],
+      "TapRight": [
+        {
+          "File": "오른쪽.motion3.json",
+          "FadeInTime": 0.06,
+          "FadeOutTime": 0.1
+        }
+      ],
+      "TapHead": [
+        {
+          "File": "꿀밤.motion3.json",
+          "FadeInTime": 0.08,
+          "FadeOutTime": 0.14
+        }
+      ]
+    }
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": []
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": []
+    }
+  ],
+  "HitAreas": [
+    {
+      "Id": "HitArealeft",
+      "Name": "HitArealeft"
+    },
+    {
+      "Id": "HitArearight",
+      "Name": "HitArearight"
+    },
+    {
+      "Id": "HitAreacheek",
+      "Name": "HitAreacheek"
+    },
+    {
+      "Id": "HitAreahead",
+      "Name": "HitAreahead"
+    }
+  ]
+}

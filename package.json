@@ -1,0 +1,24 @@
+{
+  "name": "ashur-shur-shur-bakery",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/prepare-core.mjs",
+    "dev": "vite --host 127.0.0.1 --port 5173",
+    "dev:lan": "vite --host 0.0.0.0 --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@laplace.live/pixijs-live2d": "0.6.1",
+    "pixi.js": "^8.13.0"
+  },
+  "devDependencies": {
+    "vite": "^6.4.6"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "Version": 3,
+  "Meta": {
+    "Duration": 0.82,
+    "Fps": 60.0,
+    "Loop": false,
+    "AreBeziersRestricted": false,
+    "CurveCount": 3,
+    "TotalSegmentCount": 4,
+    "TotalPointCount": 11,
+    "UserDataCount": 0,
+    "TotalUserDataSize": 0
+  },
+  "Curves": [
+    {
+      "Target": "Parameter",
+      "Id": "headattack",
+      "Segments": [
+        0,
+        0,
+        0,
+        0.82,
+        0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "BHLEFT",
+      "Segments": [
+        0,
+        0,
+        0,
+        0.82,
+        0
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Id": "BHRIGHT",
+      "Segments": [
+        0,
+        0,
+        1,
+        0.01539,
+        0,
+        0.03051,
+        1,
+        0.04591,
+        1,
+        1,
+        0.30403,
+        1,
+        0.56188,
+        0.012,
+        0.82,
+        0
+      ]
+    }
+  ]
+}
